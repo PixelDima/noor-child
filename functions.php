@@ -1,14 +1,39 @@
 <?php
 /**
- * Enqueues child theme stylesheet, loading first the parent theme stylesheet.
- **/
-function theme_enqueue_styles() {
-	wp_enqueue_style( 'noor-parent-stylesheet', get_template_directory_uri() . '/style.css' );
-	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'noor-parent-stylesheet' ) );
+ * Child theme functions
+ *
+ * When using a child theme (see http://codex.wordpress.org/Theme_Development
+ * and http://codex.wordpress.org/Child_Themes), you can override certain
+ * functions (those wrapped in a function_exists() call) by defining them first
+ * in your child theme's functions.php file. The child theme's functions.php
+ * file is included before the parent theme's file, so the child theme
+ * functions would be used.
+ *
+ * Text Domain: noor
+ *
+ * @package noor
+ * @link http://codex.wordpress.org/Plugin_API
+ */
+
+/**
+ * Load the parent style.css file
+ *
+ * @link http://codex.wordpress.org/Child_Themes
+ */
+function dima_child_enqueue_parent_style() {
+	$theme   = wp_get_theme( 'Noor' );
+	$version = $theme->get( 'Version' );
+	// Load the stylesheet.
+	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'noor-style' ), $version );
 }
 
-add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'dima_child_enqueue_parent_style' );
 
+/**
+ * Load languages.
+ *
+ * @return void
+ */
 function noor_lang_setup() {
 	$lang = get_stylesheet_directory() . '/languages';
 	load_child_theme_textdomain( 'noor', $lang );
