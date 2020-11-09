@@ -18,13 +18,13 @@ $footer_gotop   = dima_helper::dima_am_i_true( dima_helper::dima_get_option( 'di
 
 ?>
 <footer class="footer-container text-center">
-	<?php if ( $footer_logo != '' ) { ?>
+	<?php if ( '' != $footer_logo ) { ?>
 		<div class="top-footer">
 
 			<a class="footer-logo" href="/demo/" title="<?php echo get_bloginfo( 'name' ); ?>"></a>
 
 			<?php
-			// Footer Menu ----------
+			// Footer Menu.
 			if ( dima_helper::dima_get_option( 'dima_amp_footer_menu' ) != '' ) {
 
 				$menu = dima_helper::dima_get_option( 'dima_amp_footer_menu' );

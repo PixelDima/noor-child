@@ -33,7 +33,7 @@ $postid = $post->ID;
 										echo apply_filters(
 											'woocommerce_loop_add_to_cart_link',
 											sprintf(
-												'<a href="%s" rel="nofollow" data-product_id="%s" data-product_sku="%s" data-quantity="%s" class="single_add_to_cart_button dima-button fill %s product_type_%s">%s</a>',
+												'<a href="%s" rel="nofollow" data-product_id="%s" data-product_sku="%s" data-quantity="%s" class="single_add_to_cart_button dima-btn-large dima-button fill %s product_type_%s">%s</a>',
 												esc_url( $product->add_to_cart_url() ),
 												esc_attr( $product->get_id() ),
 												esc_attr( $product->get_sku() ),
