@@ -16,7 +16,7 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: searchform.php:23, searchform.php:24, searchform.php:24, framework/functions/output/navbar.php:830, framework/functions/admin/customizer/register.php:1004, framework/functions/admin/meta/meta-boxes.php:478, framework/views/partials/header/search-burger.php:47
+#: searchform.php:23, searchform.php:24, searchform.php:24, framework/functions/output/navbar.php:838, framework/functions/admin/customizer/register.php:1004, framework/functions/admin/meta/meta-boxes.php:478, framework/views/partials/header/search-burger.php:47
 msgid "Search"
 msgstr ""
 
@@ -129,12 +129,12 @@ msgstr ""
 msgid "Topic: "
 msgstr ""
 
-#: bbpress/loop-search-topic.php:49
-msgid "in group forum "
-msgstr ""
-
 #: bbpress/loop-search-topic.php:53
 msgid "in forum "
+msgstr ""
+
+#: bbpress/loop-search-topic.php:49
+msgid "in group forum "
 msgstr ""
 
 #: bbpress/user-details.php:37
@@ -209,7 +209,7 @@ msgstr ""
 msgid "You may check out all the available products and buy some in the "
 msgstr ""
 
-#: woocommerce/wishlist-view.php:331, woocommerce/wishlist-view.php:335, woocommerce/cart/cart-empty.php:35, woocommerce/cart/cart-empty.php:39, framework/functions/output/content-helper.php:61, framework/functions/output/dima-class-breadcrumbs.php:147, framework/functions/admin/meta/object_types/object_pages.php:81
+#: woocommerce/wishlist-view.php:335, woocommerce/wishlist-view.php:331, woocommerce/cart/cart-empty.php:39, woocommerce/cart/cart-empty.php:35, framework/functions/output/content-helper.php:61, framework/functions/output/dima-class-breadcrumbs.php:147, framework/functions/admin/meta/object_types/object_pages.php:81
 msgid "Shop"
 msgstr ""
 
@@ -326,12 +326,12 @@ msgstr ""
 msgid "Portfolio"
 msgstr ""
 
-#: framework/views/wp-search.php:112
-msgid "search results for"
-msgstr ""
-
 #: framework/views/wp-search.php:114
 msgid "No results found"
+msgstr ""
+
+#: framework/views/wp-search.php:112
+msgid "search results for"
 msgstr ""
 
 #: woocommerce/cart/cart-empty.php:46
@@ -438,12 +438,16 @@ msgstr ""
 msgid "More"
 msgstr ""
 
-#: framework/functions/extensions/woocommerce.php:345, framework/functions/extensions/woocommerce.php:347
+#: framework/functions/extensions/woocommerce.php:347, framework/functions/extensions/woocommerce.php:345
 msgid "There doesn&lsquo;t seem to be any available shipping methods. Please double check your address, or contact us if you need any help."
 msgstr ""
 
 #: framework/functions/extensions/woocommerce.php:382, framework/functions/extensions/woocommerce.php:451, framework/functions/admin/customizer/register.php:2966, framework/functions/admin/customizer/register.php:3278, framework/functions/admin/meta/meta-boxes.php:1791
 msgid "Cart"
+msgstr ""
+
+#: framework/functions/extensions/woocommerce.php:427
+msgid "No products in the cart."
 msgstr ""
 
 #: framework/functions/extensions/woocommerce.php:408
@@ -460,10 +464,6 @@ msgstr ""
 
 #: framework/functions/extensions/woocommerce.php:422
 msgid "Checkout"
-msgstr ""
-
-#: framework/functions/extensions/woocommerce.php:427
-msgid "No products in the cart."
 msgstr ""
 
 #: framework/functions/helper/advertisment.php:22
@@ -518,22 +518,6 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
-#: framework/functions/output/content-helper.php:57
-msgid "Next Product"
-msgstr ""
-
-#: framework/functions/output/content-helper.php:58
-msgid "No Next Product"
-msgstr ""
-
-#: framework/functions/output/content-helper.php:59
-msgid "Previous Product"
-msgstr ""
-
-#: framework/functions/output/content-helper.php:60
-msgid "No Previous Product"
-msgstr ""
-
 #: framework/functions/output/content-helper.php:63
 msgid "Next Post"
 msgstr ""
@@ -554,7 +538,23 @@ msgstr ""
 msgid "Back"
 msgstr ""
 
-#: framework/functions/output/content-helper.php:255, framework/functions/output/content-helper.php:259, framework/functions/output/content-helper.php:275, framework/functions/output/featured.php:116, framework/functions/output/featured.php:471, framework/functions/output/featured.php:587
+#: framework/functions/output/content-helper.php:57
+msgid "Next Product"
+msgstr ""
+
+#: framework/functions/output/content-helper.php:58
+msgid "No Next Product"
+msgstr ""
+
+#: framework/functions/output/content-helper.php:59
+msgid "Previous Product"
+msgstr ""
+
+#: framework/functions/output/content-helper.php:60
+msgid "No Previous Product"
+msgstr ""
+
+#: framework/functions/output/content-helper.php:259, framework/functions/output/content-helper.php:255, framework/functions/output/content-helper.php:275, framework/functions/output/featured.php:116, framework/functions/output/featured.php:471, framework/functions/output/featured.php:587
 msgid "Permalink to: %s"
 msgstr ""
 
@@ -626,8 +626,13 @@ msgstr ""
 msgid "Error 404 Page"
 msgstr ""
 
-#: framework/functions/output/dima-class-breadcrumbs.php:164
-msgid "Daily Archives: %s"
+#: framework/functions/output/dima-class-breadcrumbs.php:168
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: framework/functions/output/dima-class-breadcrumbs.php:168
+msgctxt "yearly archives date format"
+msgid "Y"
 msgstr ""
 
 #: framework/functions/output/dima-class-breadcrumbs.php:166
@@ -639,24 +644,19 @@ msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr ""
 
-#: framework/functions/output/dima-class-breadcrumbs.php:168
-msgid "Yearly Archives: %s"
+#: framework/functions/output/dima-class-breadcrumbs.php:164
+msgid "Daily Archives: %s"
 msgstr ""
 
-#: framework/functions/output/dima-class-breadcrumbs.php:168
-msgctxt "yearly archives date format"
-msgid "Y"
-msgstr ""
-
-#: framework/functions/output/navbar.php:642, framework/functions/admin/customizer/register.php:148, framework/functions/admin/customizer/register.php:373, framework/functions/admin/meta/object_types/object_event.php:59, framework/functions/admin/meta/object_types/object_pages.php:67, framework/functions/admin/meta/object_types/object_portfolio.php:430, framework/functions/admin/meta/object_types/object_post.php:531, framework/functions/admin/meta/object_types/object_product.php:58
+#: framework/functions/output/navbar.php:644, framework/functions/admin/customizer/register.php:148, framework/functions/admin/customizer/register.php:373, framework/functions/admin/meta/object_types/object_event.php:59, framework/functions/admin/meta/object_types/object_pages.php:67, framework/functions/admin/meta/object_types/object_portfolio.php:430, framework/functions/admin/meta/object_types/object_post.php:531, framework/functions/admin/meta/object_types/object_product.php:58
 msgid "Menu"
 msgstr ""
 
-#: framework/functions/output/navbar.php:695
+#: framework/functions/output/navbar.php:703
 msgid "Assign a Menu"
 msgstr ""
 
-#: framework/functions/output/navbar.php:840, framework/functions/output/navbar.php:890
+#: framework/functions/output/navbar.php:848, framework/functions/output/navbar.php:898
 msgid "Account"
 msgstr ""
 
@@ -2966,7 +2966,6 @@ msgid "Later"
 msgstr ""
 
 #. translators: Theme Name
-#. translators: Plugin Name.
 #: framework/functions/admin/includes/merlin-config.php:53, framework/functions/admin/pixeldima-setup/framework-plugins.php:269
 msgid "Activate %s"
 msgstr ""
@@ -3191,16 +3190,16 @@ msgstr ""
 msgid " - <b>1</b> Pages [ Home ] <br> <b>3</b> - Posts"
 msgstr ""
 
-#: framework/functions/admin/includes/merlin-filters.php:906
-msgid "Your purchase's support period has ended. Please extend it to receive automatic updates."
+#: framework/functions/admin/includes/merlin-filters.php:917
+msgid "Please enter a valid purchase code. Make sure to get all the characters."
 msgstr ""
 
 #: framework/functions/admin/includes/merlin-filters.php:908
 msgid "Could not find a sale with this purchase code. Please double check."
 msgstr ""
 
-#: framework/functions/admin/includes/merlin-filters.php:917
-msgid "Please enter a valid purchase code. Make sure to get all the characters."
+#: framework/functions/admin/includes/merlin-filters.php:906
+msgid "Your purchase's support period has ended. Please extend it to receive automatic updates."
 msgstr ""
 
 #: framework/functions/admin/meta/category-meta.php:15, framework/functions/admin/meta/category-meta.php:56
@@ -3583,8 +3582,8 @@ msgstr ""
 msgid "Easily export or import your Theme WordPress Customizer settings!"
 msgstr ""
 
-#: framework/functions/admin/pixeldima-setup/framework-customizer-backup.php:63
-msgid "ERROR: An import error occured. Please try again."
+#: framework/functions/admin/pixeldima-setup/framework-customizer-backup.php:96
+msgid "Invalid file type provided or file size too big. Please try again."
 msgstr ""
 
 #: framework/functions/admin/pixeldima-setup/framework-customizer-backup.php:84, framework/functions/admin/pixeldima-setup/framework-customizer-backup.php:183
@@ -3595,8 +3594,8 @@ msgstr ""
 msgid "Successfully restored!."
 msgstr ""
 
-#: framework/functions/admin/pixeldima-setup/framework-customizer-backup.php:96
-msgid "Invalid file type provided or file size too big. Please try again."
+#: framework/functions/admin/pixeldima-setup/framework-customizer-backup.php:63
+msgid "ERROR: An import error occured. Please try again."
 msgstr ""
 
 #: framework/functions/admin/pixeldima-setup/framework-customizer-backup.php:120
@@ -3609,16 +3608,16 @@ msgstr ""
 msgid "Upload"
 msgstr ""
 
+#: framework/functions/admin/pixeldima-setup/framework-customizer-backup.php:184
+msgid "Successfully Export."
+msgstr ""
+
 #: framework/functions/admin/pixeldima-setup/framework-customizer-backup.php:165
 msgid "Export"
 msgstr ""
 
 #: framework/functions/admin/pixeldima-setup/framework-customizer-backup.php:168
 msgid "Clicking the button below will create a JSON file that contain all customizer settings."
-msgstr ""
-
-#: framework/functions/admin/pixeldima-setup/framework-customizer-backup.php:184
-msgid "Successfully Export."
 msgstr ""
 
 #: framework/functions/admin/pixeldima-setup/framework-customizer-backup.php:241, framework/functions/admin/pixeldima-setup/framework-customizer-backup.php:734
@@ -3727,12 +3726,12 @@ msgstr ""
 msgid "All the plugins are well tested to work with %s and we keep them up to date. The themes comes packed with the following premium and free plugins"
 msgstr ""
 
-#: framework/functions/admin/pixeldima-setup/framework-plugins.php:94
-msgid "Active"
-msgstr ""
-
 #: framework/functions/admin/pixeldima-setup/framework-plugins.php:98
 msgid "Inactive"
+msgstr ""
+
+#: framework/functions/admin/pixeldima-setup/framework-plugins.php:94
+msgid "Active"
 msgstr ""
 
 #: framework/functions/admin/pixeldima-setup/framework-plugins.php:104
@@ -3744,12 +3743,12 @@ msgstr ""
 msgid "New Version Available: %s"
 msgstr ""
 
-#: framework/functions/admin/pixeldima-setup/framework-plugins.php:130
-msgid "v%1$s | <a href=\"%2$s\" target=\"_blank\">%3$s</a>"
-msgstr ""
-
 #: framework/functions/admin/pixeldima-setup/framework-plugins.php:137
 msgid "v%1$s || <a href=\"%2$s\">%3$s</a>"
+msgstr ""
+
+#: framework/functions/admin/pixeldima-setup/framework-plugins.php:130
+msgid "v%1$s | <a href=\"%2$s\" target=\"_blank\">%3$s</a>"
 msgstr ""
 
 #: framework/functions/admin/pixeldima-setup/framework-plugins.php:145, framework/functions/admin/includes/merlin/class-merlin.php:1182
@@ -3761,11 +3760,14 @@ msgid "Premium"
 msgstr ""
 
 #. translators: Plugin name.
-#: framework/functions/admin/pixeldima-setup/framework-plugins.php:230
-msgid "Install %s"
+#: framework/functions/admin/pixeldima-setup/framework-plugins.php:285
+msgid "Deactivate %s"
 msgstr ""
 
-#. translators: Plugin Name.
+#: framework/functions/admin/pixeldima-setup/framework-plugins.php:285
+msgid "Deactivate"
+msgstr ""
+
 #: framework/functions/admin/pixeldima-setup/framework-plugins.php:252
 msgid "Update %s"
 msgstr ""
@@ -3774,13 +3776,8 @@ msgstr ""
 msgid "Update"
 msgstr ""
 
-#. translators: Plugin name.
-#: framework/functions/admin/pixeldima-setup/framework-plugins.php:285
-msgid "Deactivate %s"
-msgstr ""
-
-#: framework/functions/admin/pixeldima-setup/framework-plugins.php:285
-msgid "Deactivate"
+#: framework/functions/admin/pixeldima-setup/framework-plugins.php:230
+msgid "Install %s"
 msgstr ""
 
 #: framework/functions/admin/pixeldima-setup/framework-system-status.php:183
@@ -3891,14 +3888,13 @@ msgstr ""
 msgid "Bottom"
 msgstr ""
 
-#. translators: %s: title of menu item which is invalid
-#: framework/functions/extensions/dima-mega-menu/dima-mega-menu.php:270
-msgid "%s (Invalid)"
-msgstr ""
-
 #. translators: %s: title of menu item in draft ismega
 #: framework/functions/extensions/dima-mega-menu/dima-mega-menu.php:274
 msgid "%s (Pending)"
+msgstr ""
+
+#: framework/functions/extensions/dima-mega-menu/dima-mega-menu.php:270
+msgid "%s (Invalid)"
 msgstr ""
 
 #: framework/functions/extensions/dima-mega-menu/dima-mega-menu.php:290
@@ -3989,20 +3985,20 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: framework/views/partials/comments/wp-comments.php:84, framework/views/partials/comments/wp-comments.php:89
+#: framework/views/partials/comments/wp-comments.php:89, framework/views/partials/comments/wp-comments.php:84
 msgid "Name*"
 msgstr ""
 
-#: framework/views/partials/comments/wp-comments.php:85, framework/views/partials/comments/wp-comments.php:90
+#: framework/views/partials/comments/wp-comments.php:90, framework/views/partials/comments/wp-comments.php:85
 msgid "Email*"
+msgstr ""
+
+#: framework/views/partials/comments/wp-comments.php:91, framework/views/partials/comments/wp-comments.php:87
+msgid "Save my name, email, and website in this browser for the next time I comment."
 msgstr ""
 
 #: framework/views/partials/comments/wp-comments.php:86
 msgid "Website"
-msgstr ""
-
-#: framework/views/partials/comments/wp-comments.php:87, framework/views/partials/comments/wp-comments.php:91
-msgid "Save my name, email, and website in this browser for the next time I comment."
 msgstr ""
 
 #: framework/views/partials/comments/wp-comments.php:126
@@ -4133,10 +4129,6 @@ msgstr ""
 msgid "The license activation was performed with the following results"
 msgstr ""
 
-#: framework/functions/admin/includes/merlin/class-merlin.php:1623, framework/functions/admin/includes/merlin/class-merlin.php:1664
-msgid "An error occurred, please try again."
-msgstr ""
-
 #. translators: Expiration date
 #: framework/functions/admin/includes/merlin/class-merlin.php:1636
 msgid "Your license key expired on %s."
@@ -4163,6 +4155,10 @@ msgstr ""
 msgid "Your license key has reached its activation limit."
 msgstr ""
 
+#: framework/functions/admin/includes/merlin/class-merlin.php:1664, framework/functions/admin/includes/merlin/class-merlin.php:1623
+msgid "An error occurred, please try again."
+msgstr ""
+
 #: framework/functions/admin/includes/merlin/class-merlin.php:1755
 msgid "The child theme functions.php content was generated"
 msgstr ""
@@ -4171,12 +4167,12 @@ msgstr ""
 msgid "The child theme style.css content was generated"
 msgstr ""
 
-#: framework/functions/admin/includes/merlin/class-merlin.php:1820
-msgid "The child theme screenshot was copied to the child theme, with the following result"
-msgstr ""
-
 #: framework/functions/admin/includes/merlin/class-merlin.php:1822
 msgid "The child theme screenshot was not generated, because of these results"
+msgstr ""
+
+#: framework/functions/admin/includes/merlin/class-merlin.php:1820
+msgid "The child theme screenshot was copied to the child theme, with the following result"
 msgstr ""
 
 #: framework/functions/admin/includes/merlin/class-merlin.php:1851
@@ -4191,12 +4187,12 @@ msgstr ""
 msgid "Installing"
 msgstr ""
 
-#: framework/functions/admin/includes/merlin/class-merlin.php:1890
-msgid "A plugin with the following data will be processed"
-msgstr ""
-
 #: framework/functions/admin/includes/merlin/class-merlin.php:1902
 msgid "A plugin with the following data was processed"
+msgstr ""
+
+#: framework/functions/admin/includes/merlin/class-merlin.php:1890
+msgid "A plugin with the following data will be processed"
 msgstr ""
 
 #: framework/functions/admin/includes/merlin/class-merlin.php:1934
@@ -4823,12 +4819,12 @@ msgstr ""
 msgid "Widget already exists"
 msgstr ""
 
-#: framework/functions/admin/includes/merlin/includes/class-merlin-widget-importer.php:256
-msgid "Imported"
-msgstr ""
-
 #: framework/functions/admin/includes/merlin/includes/class-merlin-widget-importer.php:260
 msgid "Imported to Inactive"
+msgstr ""
+
+#: framework/functions/admin/includes/merlin/includes/class-merlin-widget-importer.php:256
+msgid "Imported"
 msgstr ""
 
 #: framework/functions/admin/includes/merlin/includes/class-merlin-widget-importer.php:266
@@ -4877,12 +4873,12 @@ msgstr ""
 msgid "Using the \"%1$s\" field parameter as a callback has been deprecated in favor of the \"%2$s\" parameter."
 msgstr ""
 
-#: framework/functions/admin/meta/inc/cmb2/includes/CMB2_Base.php:456
-msgid "%1$s was called with a parameter that is <strong>deprecated</strong> since version %2$s! %3$s"
-msgstr ""
-
 #: framework/functions/admin/meta/inc/cmb2/includes/CMB2_Base.php:458
 msgid "%1$s was called with a parameter that is <strong>deprecated</strong> since version %2$s with no alternative available."
+msgstr ""
+
+#: framework/functions/admin/meta/inc/cmb2/includes/CMB2_Base.php:456
+msgid "%1$s was called with a parameter that is <strong>deprecated</strong> since version %2$s! %3$s"
 msgstr ""
 
 #: framework/functions/admin/meta/inc/cmb2/includes/CMB2_Base.php:491, framework/functions/admin/meta/inc/cmb2/includes/CMB2_Hookup_Base.php:100, framework/functions/admin/meta/inc/cmb2/includes/CMB2_Options_Hookup.php:341, framework/functions/admin/meta/inc/cmb2/includes/types/CMB2_Type_Base.php:172
